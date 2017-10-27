@@ -19,7 +19,7 @@
         <protobuf-java.version>3.4.0</protobuf-java.version>
         <maven-compiler-plugin.version>3.7.0</maven-compiler-plugin.version>
         <protobuf-maven-plugin.version>0.5.1</protobuf-maven-plugin.version>
-        <protobuf-maven-plugin.protocExecutable>/usr/local/bin/protoc</protobuf-maven-plugin.protocExecutable>
+        <protobuf-maven-plugin.protocExecutable>C:/Protobuf/protoc</protobuf-maven-plugin.protocExecutable>
         <maven-compiler-plugin.source>1.8</maven-compiler-plugin.source>
         <maven-compiler-plugin.target>1.8</maven-compiler-plugin.target>
     </properties>

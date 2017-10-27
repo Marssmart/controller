@@ -1,8 +1,8 @@
 syntax = "proto3";
 
-package io.fd.honeycomb.proto.messages;
+package org.deer;
 
-option java_package = "io.fd.honeycomb.proto.messages";
+option java_package = "org.deer.proto.messages";
 option java_outer_classname = "MessageTypes";
 
 import "google/protobuf/any.proto";
