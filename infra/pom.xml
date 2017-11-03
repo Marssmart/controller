@@ -14,10 +14,9 @@
     <packaging>pom</packaging>
 
     <modules>
-        <module>proto-api</module>
         <module>proto-api-parent</module>
         <module>controller-parent</module>
-        <module>proto-translate-api</module>
-        <module>proto-translate-impl</module>
+        <module>proto-server</module>
+        <module>plugin-parent</module>
     </modules>
 </project>
