@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+import "Network.proto";
+
+package org.deer.network;
+
+message NetworkInfoRequest {
+}
+
+message NetworkInfoResponse {
+    NetworkInfo networkInfo = 1;
+}
+
+service NetworkInfoService {
+    rpc GetNetworkInfo (NetworkInfoRequest) returns (NetworkInfoResponse);
+}

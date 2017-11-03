@@ -1,4 +1,4 @@
-package org.deer.proto.translate;
+package org.deer.proto.server;
 
 import io.grpc.Server;
 import io.grpc.ServerBuilder;
@@ -27,6 +27,7 @@ public class ProtoServer {
         LOG.info("Starting server on port {}", port);
         serviceRegistry.getRegisteredServices().stream()
                 .peek(service -> LOG.info("Registering service {}", service))
+                .map(ServiceRegistry.ServiceRegistration::getService)
                 .forEach(serverBuilder::addService);
         server = serverBuilder
                 .executor(executor)

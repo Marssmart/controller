@@ -18,5 +18,6 @@
         <module>controller-parent</module>
         <module>proto-server</module>
         <module>plugin-parent</module>
+        <module>proto-client</module>
     </modules>
 </project>

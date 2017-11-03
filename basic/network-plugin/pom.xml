@@ -10,7 +10,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>server-runner</artifactId>
+    <artifactId>network-plugin</artifactId>
     <version>1.0-SNAPSHOT</version>
 
     <dependencies>
@@ -19,10 +19,13 @@
             <artifactId>guice</artifactId>
         </dependency>
         <dependency>
+            <groupId>com.google.inject.extensions</groupId>
+            <artifactId>guice-multibindings</artifactId>
+        </dependency>
+        <dependency>
             <groupId>org.deer</groupId>
-            <artifactId>network-plugin</artifactId>
+            <artifactId>proto-server</artifactId>
             <version>${project.version}</version>
         </dependency>
     </dependencies>
-
 </project>

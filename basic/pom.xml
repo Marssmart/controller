@@ -13,6 +13,8 @@
     <packaging>pom</packaging>
     <modules>
         <module>server-runner</module>
+        <module>network-plugin</module>
+        <module>client-runner</module>
     </modules>
 
 

@@ -3,26 +3,25 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
+        <artifactId>basic</artifactId>
         <groupId>org.deer</groupId>
-        <artifactId>plugin-parent</artifactId>
         <version>1.0-SNAPSHOT</version>
-        <relativePath>../../infra/plugin-parent</relativePath>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>server-runner</artifactId>
-    <version>1.0-SNAPSHOT</version>
-
+    <artifactId>client-runner</artifactId>
     <dependencies>
         <dependency>
-            <groupId>com.google.inject</groupId>
-            <artifactId>guice</artifactId>
+            <groupId>org.deer</groupId>
+            <artifactId>proto-client</artifactId>
+            <version>1.0-SNAPSHOT</version>
         </dependency>
         <dependency>
             <groupId>org.deer</groupId>
             <artifactId>network-plugin</artifactId>
-            <version>${project.version}</version>
+            <version>1.0-SNAPSHOT</version>
         </dependency>
     </dependencies>
+
 
 </project>

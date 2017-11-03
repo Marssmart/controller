@@ -3,8 +3,8 @@ package org.deer.controller.provider;
 import com.google.inject.Inject;
 import com.google.inject.Provider;
 import java.util.concurrent.Executors;
-import org.deer.proto.translate.ProtoServer;
-import org.deer.proto.translate.ServiceRegistry;
+import org.deer.proto.server.ProtoServer;
+import org.deer.proto.server.ServiceRegistry;
 
 public class ProtoServerProvider implements Provider<ProtoServer> {
 

@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package org.deer.network;
+
+message Interface {
+    int32 index = 1;
+    string name = 2;
+}
+
+message NetworkInfo {
+    repeated Interface interfaces = 1;
+}
+

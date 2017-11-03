@@ -1,24 +1,23 @@
-package org.deer.proto.translate;
+package org.deer.proto.server;
 
-import io.grpc.BindableService;
 import java.util.LinkedList;
 import java.util.List;
 
 public class ServiceRegistryImpl implements ServiceRegistry {
 
-    private final List<BindableService> services;
+    private final List<ServiceRegistration> services;
 
     public ServiceRegistryImpl() {
         services = new LinkedList<>();
     }
 
     @Override
-    public void registerService(final BindableService service) {
+    public void registerService(final ServiceRegistration service) {
         this.services.add(service);
     }
 
     @Override
-    public List<BindableService> getRegisteredServices() {
+    public List<ServiceRegistration> getRegisteredServices() {
         return services;
     }
 }
