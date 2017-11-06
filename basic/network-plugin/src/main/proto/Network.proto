@@ -2,9 +2,39 @@ syntax = "proto3";
 
 package org.deer.network;
 
+message IpAddressInfo {
+    string hostAddress = 1;
+    bool reachable = 2;
+    bool anyLocalAddress = 3;
+    bool loopbackAddress = 4;
+    bool linkLocal = 5;
+    bool mcGlobal = 6;
+    bool mcLinkLocal = 7;
+    bool mcNodeLocal = 8;
+    bool mcOrgLocal = 9;
+    bool mcSiteLocal = 10;
+    bool mc = 11;
+    bool siteLocal = 12;
+}
+
+message InterfaceAddress {
+    string address = 1;
+    string broadcast = 2;
+    int32 maskLength = 3;
+}
+
 message Interface {
     int32 index = 1;
     string name = 2;
+    string displayName = 3;
+    repeated string addresses = 4;
+    repeated InterfaceAddress bindings = 5;
+    repeated Interface childs = 6;
+    Interface parent = 7;
+    bool virtual = 8;
+    bool loopback = 9;
+    bool pointToPoint = 10;
+    bool up = 11;
 }
 
 message NetworkInfo {

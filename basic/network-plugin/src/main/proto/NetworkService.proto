@@ -11,6 +11,16 @@ message NetworkInfoResponse {
     NetworkInfo networkInfo = 1;
 }
 
+message AddressInfoRequest {
+    string address = 1;
+    int32 timeout = 2;
+}
+
+message AddressInfoResponse {
+    IpAddressInfo address = 1;
+}
+
 service NetworkInfoService {
     rpc GetNetworkInfo (NetworkInfoRequest) returns (NetworkInfoResponse);
+    rpc GetAddressInfo (AddressInfoRequest) returns (AddressInfoResponse);
 }
