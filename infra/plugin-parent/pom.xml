@@ -15,7 +15,7 @@
     <packaging>pom</packaging>
 
     <properties>
-        <guice.version>4.1.0</guice.version>
+        <guice.version>5.0.0</guice.version>
     </properties>
 
     <dependencyManagement>
