@@ -12,7 +12,7 @@
     <properties>
         <maven.compiler.target>1.8</maven.compiler.target>
         <maven.compiler.source>1.8</maven.compiler.source>
-        <grpc.version>1.7.0</grpc.version>
+        <grpc.version>1.42.0</grpc.version>
         <logback-classic.version>1.1.7</logback-classic.version>
     </properties>
 
